@@ -1,0 +1,466 @@
+* {
+    box-sizing: border-box;
+}
+
+.body-formulario {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f5f7f9;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111827;
+}
+
+.login-container {
+    width: 390px;
+
+    background-color: white;
+
+    padding: 38px 35px 35px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+}
+
+
+h1 {
+    margin: 0;
+
+    text-align: center;
+
+    font-size: 27px;
+    font-weight: bold;
+}
+
+h1 span {
+    color: #2f6df6;
+}
+
+
+
+.subtitulo {
+    text-align: center;
+
+    color: #718096;
+
+    font-size: 13px;
+
+    margin-top: 8px;
+    margin-bottom: 32px;
+}
+
+
+.campo {
+    margin-bottom: 18px;
+}
+
+.campo label {
+    display: block;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}
+
+.campo input,
+.campo select {
+    width: 100%;
+    height: 40px;
+
+    padding: 0 12px;
+
+    border: 1px solid #d9e0ea;
+    border-radius: 7px;
+
+    font-size: 13px;
+
+    outline: none;
+
+    background-color: white;
+}
+
+
+
+.campo input:focus,
+.campo select:focus {
+    border-color: #2f6df6;
+}
+
+
+
+.campo input::placeholder {
+    color: #9097a2;
+}
+
+
+
+.terminos {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    margin-top: 4px;
+    margin-bottom: 30px;
+}
+
+.terminos input {
+    width: 13px;
+    height: 13px;
+}
+
+.terminos label {
+    font-size: 11px;
+    color: #718096;
+}
+
+
+
+button {
+    width: 100%;
+    height: 36px;
+
+    border: none;
+    border-radius: 7px;
+
+    background-color: #2f6df6;
+    color: white;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #245cda;
+}
+
+/* ||||ESTILOS DEL DASHBOARD||||| */
+
+
+.body-dashboard {
+    margin: 0;
+    background-color: #f5f7f9;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #172033;
+    min-height: 100vh;
+}
+
+
+
+.dashboard {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+}
+
+
+
+
+header {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    border-bottom: 1px solid #e5e9ef;
+}
+
+#menu-checkbox{
+    display: none;
+}
+
+.menu-btn{
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 18px;
+    color: #172033;
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.perfil {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #2864e8;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+.contenido {
+    display: flex;
+    height: 780px;
+}
+
+
+
+
+aside {
+    width: 220px;
+    background-color: #1b273b;
+    flex-shrink: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+nav a {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 0 14px;
+    color: #9ca8ba;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover{
+    background-color:#26354d;
+    color: white;
+}
+
+nav a.activo{
+    background-color: #25344b;
+    color: white;
+}
+
+nav a.cerrar{
+    margin-top: 18px;
+    color: #f26b5e;
+}
+
+main{
+    flex: 1;
+    background-color: #f7f9fb;
+    padding: 17px;
+}
+
+.titulo-dashboard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.titulo-dashboard h2{
+    margin: 20px;
+    font-size: 32px;
+    margin-top: 18px;
+}
+
+.nuevo{
+    border: none;
+    background-color: #2864e8;
+    color: white;
+    padding: 10px 5px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 200px;
+}
+ 
+.nuevo:hover{
+    background-color: #1e55ca;
+}
+
+.proyectos{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 13px;
+}
+
+.card{
+    background-color: white;
+    border: 1px solid #c8ccd1;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.08);
+    height: 250px;
+}
+
+.card:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 61, 152, 0.35);
+}
+
+.estado{
+    display: inline-block;
+    padding: 5px 6px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.desarrollo{
+    background-color: #e7f0ff;
+    color: #3974d8;
+}
+
+
+.revision {
+    background-color: #fff3d9;
+    color: #bd8425;
+}
+
+.completado {
+    background-color: #dcf7e8;
+    color: #36915e;
+}
+
+.card h3{
+    margin: 7px 0 ;
+    font-size: 19px;
+}
+
+.card p{
+    margin: 0;
+    color: #99acc3;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.tecnologias{
+    display: flex;
+    gap: 5px;
+    margin-top: 60px;
+}
+
+.tecnologias span{
+    padding: 3px 5px;
+    border: 1px solid #e0dcdc;
+    border-radius: 5px;
+    color: #777a79;
+    font-size: 15px;
+}
+
+
+footer {
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-top: 1px solid #e5e9ef;
+
+    color: #8994a5;
+
+    font-size: 15px;
+}  
+
+
+@media (max-width: 768px) {
+
+    .contenido {
+        flex-direction: column;
+        height: auto;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+
+    nav a {
+        flex: 50%;
+        justify-content: center;
+        height: 50px;
+    }
+
+    main {
+        padding: 12px;
+    }
+
+    .titulo-dashboard {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .titulo-dashboard h2 {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .nuevo {
+        width: 100%;
+    }
+
+    .proyectos {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        height: auto;
+    }
+
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+
+    .menu-btn{
+        display: block;
+    }
+
+    .contenido{
+        flex-direction: column;
+    }
+
+    aside{
+        position: fixed;
+        top: 75px;
+        left: -250px;
+        width: 250px;
+        height: calc(100vh - 75px);
+        transition: 0.3s;
+        z-index: 1000;
+    }
+
+    #menu-checkbox:checked ~ .contenido aside{
+        left: 0;
+    }
+
+
+
+ 
+}
+
+
+
